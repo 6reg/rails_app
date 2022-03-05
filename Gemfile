@@ -11,7 +11,7 @@ gem 'bootsnap',   '1.7.2', require: false
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
-  gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
+gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
@@ -25,6 +25,10 @@ group :test do
   gem 'capybara',           '3.35.3'
   gem 'selenium-webdriver', '3.142.7'
   gem 'webdrivers',         '4.6.0'
+end
+
+group :production do
+  gem 'pg', '1.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
